@@ -10,14 +10,14 @@
 /*header*/
 
 .header {
-    position: absolute;
+    position: fixed;
     top: 91px;
-    left: 255px;
+    left: 10%;
     backdrop-filter: blur(20.899999618530273px);
     background: rgba(247, 219, 178, 0.75);
     border-radius: 9999px;
     border: 1px solid rgba(251, 218, 171, 0.5);
-
+    z-index: 9999;
 }
 
 .header .container {
@@ -33,7 +33,7 @@
     gap: 39px;
 }
 
-.header-list a{
+.header-list a {
     opacity: 0.4;
     font-weight: 300;
     font-size: 18px;
@@ -43,7 +43,7 @@
     color: #281500;
 }
 
-.header-list a:hover{
+.header-list a:hover {
     opacity: 1;
     font-weight: 600;
     color: #281500;
@@ -104,10 +104,12 @@
 
 .main {
     background-image: url("images/main.png");
-    width: 1840px;
+    max-width: 1840px;
     height: 1078px;
     margin: 39px auto 0;
     border-radius: 54px;
+    background-size: cover;
+    width: 100%;
 }
 
 .main-title {
@@ -148,9 +150,38 @@
     padding: 0 66px 0 67px;
     display: flex;
     gap: 60px;
+    z-index: 10;
+    position: relative;
+}
+
+.about-img__1 {
+    position: absolute;
+    left: 608px;
+    bottom: -134px;
+    z-index: 1;
+    opacity: 0.8;
+
+}
+
+.about-img__2 {
+    position: absolute;
+    left: -615px;
+    top: -170px;
+    z-index: 1;
+    opacity: 0.8;
+
+}
+
+.about-content {
+    z-index: 10;
+}
+
+.about-img__wrapper {
+    z-index: 10;
 }
 
 .about-title {
+    font-family: "Cormorant", serif;
     font-weight: 500;
     font-size: 64px;
     line-height: 94%;
@@ -188,6 +219,7 @@
 }
 
 .services-title {
+    font-family: "Cormorant", serif;
     font-weight: 500;
     font-size: 64px;
     line-height: 94%;
@@ -326,7 +358,26 @@
     margin-top: 177px;
 }
 
+.benefits .container {
+    position: relative;
+}
+
+.benefits-img__1 {
+    position: absolute;
+    top: -273px;
+    left: 364px;
+    opacity: 0.8;
+}
+
+.benefits-img__2 {
+    position: absolute;
+    top: 112px;
+    left: -803px;
+    opacity: 0.8;
+}
+
 .benefits-title {
+    font-family: "Cormorant", serif;
     font-weight: 500;
     font-size: 64px;
     line-height: 94%;
@@ -357,7 +408,7 @@
     opacity: 0.3;
 }
 
-.benefits-list li:hover p{
+.benefits-list li:hover p {
     color: #ab7631;
     opacity: 1;
 }
@@ -414,6 +465,7 @@
 }
 
 .clients-title {
+    font-family: "Cormorant", serif;
     font-weight: 500;
     font-size: 64px;
     line-height: 94%;
@@ -456,6 +508,7 @@
 
 .contacts {
     margin-top: 170px;
+    overflow: hidden;
 }
 
 .contacts-wrapper {
@@ -473,7 +526,7 @@
     flex-direction: column;
 }
 
-.contacts-img{
+.contacts-img {
     position: absolute;
     left: 359px;
     z-index: 100;
@@ -485,6 +538,7 @@
 }
 
 .contacts-title {
+    font-family: "Cormorant", serif;
     font-weight: 500;
     font-size: 64px;
     line-height: 94%;
@@ -537,7 +591,6 @@
 }
 
 
-
 /*reviews*/
 
 .reviews {
@@ -545,6 +598,7 @@
 }
 
 .reviews-title {
+    font-family: "Cormorant", serif;
     font-weight: 500;
     font-size: 64px;
     line-height: 94%;
@@ -614,6 +668,13 @@
     margin-top: 9px;
     padding-left: 30px;
     position: relative;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 157%;
+    letter-spacing: 0.02em;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    color: #281500;
 }
 
 .footer-whats::before {
