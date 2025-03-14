@@ -10,7 +10,7 @@
 /*header*/
 .header {
     position: fixed;
-    top: 91px;
+    top: 32px;
     left: 50%; /* Сдвигаем хедер на 50% вправо */
     transform: translateX(-50%); /* Возвращаем назад на 50% своей ширины */
     width: 1350px; /* Фиксированная ширина */
@@ -107,8 +107,9 @@
     background-image: url("images/main.png");
     max-width: 1840px;
     height: 1078px;
-    margin: 39px auto 0;
-    border-radius: 54px;
+    margin: 0 auto 0;
+    border-bottom-left-radius: 54px;
+    border-bottom-right-radius: 54px;
     background-size: cover;
     width: 100%;
 }
