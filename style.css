@@ -8,11 +8,12 @@
 }
 
 /*header*/
-
 .header {
     position: fixed;
     top: 91px;
-    left: 10%;
+    left: 50%; /* Сдвигаем хедер на 50% вправо */
+    transform: translateX(-50%); /* Возвращаем назад на 50% своей ширины */
+    width: 1350px; /* Фиксированная ширина */
     backdrop-filter: blur(20.899999618530273px);
     background: rgba(247, 219, 178, 0.75);
     border-radius: 9999px;
@@ -21,7 +22,7 @@
 }
 
 .header .container {
-    width: 1350px;
+    width: 100%; /* Ширина контейнера равна ширине хедера */
     padding: 16px 33px;
     display: flex;
     justify-content: space-between;
@@ -518,6 +519,7 @@
 }
 
 .contacts-info {
+    width: 360px;
     position: absolute;
     left: -111px;
     top: 58px;
@@ -581,6 +583,7 @@
 .contacts-links {
     display: flex;
     gap: 26px;
+    justify-content: end;
 }
 
 .contacts-links li {
