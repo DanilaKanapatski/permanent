@@ -144,11 +144,15 @@
 
 /*about*/
 
-.about {
+.about-desk {
     margin-top: 167px;
 }
 
-.about .container {
+.about-mob {
+    display: none;
+}
+
+.about-desk .container {
     padding: 0 66px 0 67px;
     display: flex;
     gap: 60px;
@@ -290,8 +294,12 @@
 
 /*info*/
 
-.info {
+.info-desk {
     margin-top: 185px;
+}
+
+.info-mob {
+    display: none;
 }
 
 .info-wrapper {
@@ -356,12 +364,16 @@
 
 /*benefits*/
 
-.benefits {
+.benefits-desk {
     margin-top: 177px;
 }
 
-.benefits .container {
+.benefits-desk .container {
     position: relative;
+}
+
+.benefits-mob {
+    display: none;
 }
 
 .benefits-img__1 {
@@ -451,8 +463,12 @@
 
 /*clients*/
 
-.clients {
+.clients-desk {
     margin-top: 173px;
+}
+
+.clients-mob {
+    display: none;
 }
 
 .clients-wrapper {
@@ -508,9 +524,13 @@
 
 /*contacts*/
 
-.contacts {
+.contacts-desk {
     margin-top: 170px;
     overflow: hidden;
+}
+
+.contacts-mob {
+    display: none;
 }
 
 .contacts-wrapper {
@@ -764,4 +784,639 @@
     letter-spacing: 0.02em;
     color: #281500;
     opacity: 0.5;
+}
+
+@media screen and (max-width: 768px) {
+
+    body {
+        background: #F2F0EB;
+    }
+
+    .container {
+        max-width: 1350px;
+        margin: 0 auto;
+    }
+
+    .main {
+        position: relative;
+    }
+
+    /*header*/
+    .header {
+        display: none;
+    }
+
+    .header .container {
+        width: 100%; /* Ширина контейнера равна ширине хедера */
+        padding: 16px 33px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .header-list {
+        display: flex;
+        gap: 39px;
+    }
+
+    .header-list a {
+        opacity: 0.4;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 94%;
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+        color: #281500;
+    }
+
+    .header-list a:hover {
+        opacity: 1;
+        font-weight: 600;
+        color: #281500;
+    }
+
+    .header-info {
+        display: flex;
+        gap: 25px;
+        align-items: center;
+    }
+
+    .header-social {
+        display: flex;
+        gap: 25px;
+    }
+
+    .header-info__link {
+        position: relative;
+        padding: 12px 19px 12px 38px;
+        background: #281500;
+        width: 159px;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 94%;
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+        color: #f1d9b7;
+        border-radius: 54px;
+    }
+
+    .header-info__link::before {
+        content: url("images/tel.svg");
+        position: absolute;
+        left: 15px;
+        top: 12px;
+    }
+
+    .header-info__lang {
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 94%;
+        letter-spacing: 0.02em;
+        color: #281500;
+        padding-right: 11.5px;
+        position: relative;
+        cursor: pointer;
+    }
+
+    .header-info__lang::after {
+        content: url("images/arr.svg");
+        right: 0;
+        top: -3px;
+        position: absolute;
+    }
+
+
+    /*main*/
+    .main {
+        background-image: url("images/main.png");
+        max-width: 1840px;
+        height: 1001px;
+        margin: 0 auto 0;
+        border-bottom-left-radius: 36px;
+        border-bottom-right-radius: 36px;
+        background-size: cover;
+        width: 100%;
+        background-position: center;
+    }
+
+    .main-title {
+        font-weight: 400;
+        font-size: 42px;
+        line-height: 110%;
+        text-align: center;
+        color: #fefbf7;
+        max-width: 382px;
+        padding-top: 562px;
+    }
+
+    .main-link {
+        margin: 77px auto 0;
+        display: block;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 94%;
+        letter-spacing: 0.02em;
+        text-align: center;
+        color: #f0eee8;
+        backdrop-filter: blur(9.6091947555542px);
+        background: rgba(255, 233, 200, 0.4);
+        padding: 26.5px 40px;
+        border: 0.46px solid rgba(254, 251, 247, 0.39);
+        border-radius: 4597px;
+        width: 420px;
+    }
+
+    /*about*/
+    .about-desk {
+        display: none;
+    }
+
+    .about-mob {
+        display: block;
+        margin-top: 91px;
+    }
+
+    .about-mob .container {
+        max-width: 440px;
+        position: relative;
+        margin: 0 auto 0;
+    }
+
+    .about-mob-title {
+        font-weight: 500;
+        font-size: 36px;
+        line-height: 100%;
+        letter-spacing: -0.02em;
+        color: #281500;
+        font-family: "Cormorant", serif;
+        margin-top: 19px;
+        padding-left: 5px;
+        max-width: 401px;
+    }
+
+    .about-mob-desc {
+        margin-top: 22px;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 140%;
+        letter-spacing: 0.02em;
+        color: #281500;
+        padding-left: 5px;
+        max-width: 415px;
+    }
+
+    .about-mob-subtitle {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 94%;
+        letter-spacing: 0.02em;
+        color: #281500;
+        padding-left: 5px;
+        margin-top: 26px;
+    }
+
+    .about-mob-img {
+        position: absolute;
+        top: 39px;
+        left: 213px;
+    }
+
+    .about-mob-link {
+        position: relative;
+        margin-top: 39px;
+        display: block;
+        text-align: center;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 111%;
+        text-transform: uppercase;
+        color: #fcfcfc;
+        box-shadow: 0 1px 2px 0 rgba(16, 24, 40, 0.05);
+        background: #281500;
+        border-radius: 99px;
+        padding: 25px 22px;
+        width: 440px;
+        height: 70px;
+    }
+
+    .about-mob-link-arrow {
+        position: absolute;
+        right: 150px; /* отступ справа */
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    /*services*/
+    .services {
+        margin-top: 96px;
+    }
+
+    .services .container {
+        max-width: 442px;
+    }
+
+    .services-title {
+        font-family: "Cormorant", serif;
+        font-weight: 500;
+        font-size: 36px;
+        line-height: 100%;
+        letter-spacing: -0.02em;
+        color: #281500;
+    }
+
+    .services-list {
+        margin-top: 28px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px 12px;
+    }
+
+    .services-list li {
+        max-width: 215px;
+        border: 1px solid rgba(40, 21, 0, 0.05);
+        border-radius: 20px;
+        background: #f1eee7;
+    }
+
+    .services-link {
+        text-transform: uppercase;
+        position: relative;
+        padding-left: 20px;
+        /*display: flex;*/
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 120%;
+        letter-spacing: 0.02em;
+        color: #281500;
+        max-width: 175px;
+        margin-top: 24px;
+        margin-bottom: 24px;
+        text-decoration: none;
+    }
+
+    .services-link a {
+        color: inherit;
+        text-decoration: none;
+    }
+
+    .services-link a:hover {
+        color: #ab7631;
+    }
+
+    .services-link svg {
+        display: none;
+    }
+
+    .services-link:hover svg path {
+        stroke: #ab7631; /* Изменение цвета стрелки при наведении */
+    }
+
+    .services-link:hover::before {
+        content: '';
+        position: absolute;
+        width: 44px; /* Размер круга */
+        height: 44px; /* Размер круга */
+        background-color: rgba(171, 118, 49, 0.2); /* Цвет круга */
+        border-radius: 50%; /* Делаем круг */
+        top: 10px;
+        right: -32px;
+        transform: translate(-50%, -50%); /* Центрируем круг */
+        z-index: -1; /* Помещаем круг под стрелку */
+    }
+
+    /*info*/
+    .info-desk {
+        display: none;
+    }
+
+    .info-mob {
+        display: block;
+        margin-top: 58px;
+    }
+
+    .info-mob .container {
+        max-width: 442px;
+        padding: 87px 28px 61px;
+        background: #f6f4f1;
+        opacity: 0.9;
+        border-radius: 30px;
+    }
+
+    .info-mob .container img {
+        display: block;
+        margin: 34px auto 0;
+    }
+
+    .info-mob-title {
+        font-weight: 500;
+        font-size: 36px;
+        line-height: 100%;
+        letter-spacing: -0.02em;
+        text-align: center;
+        color: #281500;
+        font-family: "Comprant", serif;
+    }
+
+    .info-mob-desc {
+        margin: 16px auto 0;
+        font-style: italic;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 140%;
+        letter-spacing: 0.02em;
+        text-align: center;
+        color: #ab7631;
+        opacity: 0.7;
+        max-width: 259px;
+    }
+
+    .info-mob-content {
+        display: flex;
+        gap: 22px;
+        flex-direction: column;
+        max-width: 377px;
+        margin: 27px auto 0;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 140%;
+        letter-spacing: -0.02em;
+        color: #281500;
+        font-family: "Comprant", serif;
+    }
+
+
+    /*benefits*/
+    .benefits-desk {
+        display: none;
+    }
+
+    .benefits-mob {
+        display: block;
+        margin-top: 60px;
+    }
+
+    .benefits-mob .container {
+        max-width: 412px;
+    }
+
+    .benefits-mob-title {
+        font-weight: 500;
+        font-size: 36px;
+        line-height: 100%;
+        letter-spacing: -0.02em;
+        text-transform: uppercase;
+        text-align: center;
+        color: #281500;
+        font-family: "Comprant", serif;
+    }
+
+    .benefits-mob-list {
+        margin-top: 6px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .benefits-mob-list li {
+        display: flex;
+        gap: 28px;
+        align-items: center;
+        padding: 32px 0;
+        border-bottom: 1px solid #c49f6f;
+    }
+
+    .benefits-mob-list li span:first-child {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 100%;
+        letter-spacing: -0.02em;
+        text-align: center;
+        color: #281500;
+        font-family: "Comprant", serif;
+        max-width: 125px;
+        width: 100%;
+    }
+
+    .benefits-mob-list li span:nth-child(2) {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 158%;
+        letter-spacing: 0.02em;
+        color: #281500;
+    }
+
+    /*clients*/
+    .clients-desk {
+        display: none;
+    }
+
+    .clients-mob {
+        display: block;
+        margin-top: 101px;
+    }
+
+    .clients-mob .container {
+        max-width: 430px;
+    }
+
+    .clients-mob-title {
+        font-size: 36px;
+        font-weight: 500;
+        line-height: 94%;
+        letter-spacing: -0.02em;
+        text-transform: uppercase;
+        text-align: center;
+        color: #281500;
+        font-family: "Comprant", serif;
+    }
+
+    .clients-mob-content {
+        margin-top: 30px;
+        background: #f6f4f0;
+        opacity: 0.9;
+        border-radius: 30px;
+        padding: 32px 35px 39px;
+    }
+
+    .clients-mob-wrapper {
+        display: flex;
+        gap: 56px;
+    }
+
+    .clients-mob-wrapper img {
+        display: block;
+        margin-top: 4px;
+    }
+
+    .clients-mob-name {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 158%;
+        letter-spacing: 0.02em;
+        color: #281500;
+    }
+
+    .clients-mob-profession {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 158%;
+        letter-spacing: 0.02em;
+        color: #281500;
+        opacity: 0.6;
+    }
+
+    .clients-mob-desc {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 158%;
+        letter-spacing: 0.02em;
+        color: #281500;
+        margin-top: 30px;
+    }
+
+    /*contacts*/
+    .contacts-desk {
+        display: none;
+    }
+
+    .contacts-mob {
+        display: block;
+        margin-top: 147px;
+    }
+
+    .contacts-mob-title {
+        font-weight: 500;
+        font-size: 36px;
+        line-height: 94%;
+        letter-spacing: -0.02em;
+        text-transform: uppercase;
+        text-align: center;
+        color: #281500;
+        font-family: "Comprant", serif;
+    }
+
+    .contacts-mob-content {
+        padding: 40px 32px;
+        background: #f6f4ef;
+        border-radius: 20px;
+    }
+
+    .contacts-mob-wrapper {
+        padding: 0 1.5px;
+        margin-top: 36px;
+    }
+
+    .contacts-mob-wrapper h3 {
+        font-weight: 300;
+        font-size: 40px;
+        line-height: 94%;
+        letter-spacing: 0.02em;
+        color: #281500;
+    }
+
+    .contacts-mob-desc {
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 157%;
+        letter-spacing: 0.02em;
+        color: #281500;
+    }
+
+    .contacts-mob-address {
+        width: 383px;
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .contacts-mob-info {
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 157%;
+        letter-spacing: 0.02em;
+        text-decoration: underline;
+        text-decoration-skip-ink: none;
+        color: #281500;
+    }
+
+    .contacts-mob-info a {
+        display: block;
+    }
+
+    .contacts-mob-list {
+        display: flex;
+        gap: 13.5px;
+        margin-top: 20px;
+    }
+
+    .contacts-mob-list li {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 51px;
+        height: 51px;
+        border-radius: 100%;
+        background: #c5baad;
+    }
+
+    .contacts-mob-list li:last-child {
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 157%;
+        letter-spacing: 0.02em;
+        color: #ebe8e2;
+        background: #a89e93;
+        width: 135px;
+        border-radius: 99px;
+    }
+
+    .contacts-mob-list li:last-child a{
+        position: relative;
+        padding-left: 42px;
+    }
+
+    .contacts-mob-list li:last-child a svg {
+        position: absolute;
+        left: 10px;
+        top: 4px;
+    }
+
+    /*reviews*/
+    .reviews {
+        margin-top: 162px;
+    }
+
+    .reviews-title {
+        font-family: "Cormorant", serif;
+        font-weight: 500;
+        font-size: 64px;
+        line-height: 94%;
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+        text-align: center;
+        color: #281500;
+    }
+
+    .reviews-list {
+        margin-top: 56px;
+        display: flex;
+        gap: 10px;
+    }
+
+    .reviews-list li {
+        width: 329px;
+        height: 242px;
+        background-color: #b5dcdc;
+    }
+
+    /*footer*/
+
+    .footer-desk {
+        display: none;
+    }
+
+    .footer-mob {
+        display: block;
+        background: #CDBBA3;
+        padding: 52px 40px 74px;
+    }
 }

@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="global.css">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -11,7 +12,9 @@
     <title>Permanent</title>
 </head>
 <body>
+
 <main>
+
     <section class="main">
         <header class="header">
             <div class="container"><a href="#"><img src="images/header-logo.svg" alt=""></a>
@@ -41,7 +44,7 @@
         <h1 class="main-title">Discover your natural beauty with premium quality services</h1>
         <a class="main-link" href="">BOOK NOW</a>
     </section>
-    <section class="about" id="about">
+    <section class="about-desk" id="about">
         <div class="container">
             <img class="about-img__1" src="images/about-5.svg" alt="">
             <img class="about-img__2" src="images/about-6.svg" alt="">
@@ -65,12 +68,34 @@
             </div>
         </div>
     </section>
+    <section class="about-mob" id="about1">
+        <div class="container">
+            <img src="images/about-2.1.png" alt="" class="about-mob-img">
+            <img src="images/about-1.1.png" alt="">
+            <p class="about-mob-subtitle">About Us</p>
+            <h2 class="about-mob-title">A brand of premium permanent makeup for you</h2>
+            <p class="about-mob-desc">We embody the art of creating natural beauty. Revealing the natural beauty of our
+                clients through permanent makeup that enhances individuality rather than alters it.</p>
+            <a class="about-mob-link" href="#">BOOK NOW
+                <svg class="about-mob-link-arrow" width="19" height="18" viewBox="0 0 19 18" fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4.25 9H14.75M14.75 9L10.25 4.5M14.75 9L10.25 13.5" stroke="#FCFCFC" stroke-width="1.5"
+                          stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </a>
+
+        </div>
+    </section>
     <section id="services" class="services">
         <div class="container">
             <h2 class="services-title">Our services</h2>
             <ul class="services-list">
                 <li>
-                    <img src="images/services-1.png" alt="">
+                    <picture>
+                        <source srcset="images/services-1.1.png" media="(max-width: 768px)">
+                        <img src="images/services-1.png" alt="">
+                    </picture>
+
                     <div class="services-link">
                         <a href="">BIOLOGIQUE RECHERCHE premium skincare </a>
                         <svg width="23" height="20" viewBox="0 0 23 20" fill="none"
@@ -81,7 +106,10 @@
                     </div>
                 </li>
                 <li>
-                    <img src="images/services-2.png" alt="">
+                    <picture>
+                        <source srcset="images/services-2.1.png" media="(max-width: 768px)">
+                        <img src="images/services-2.png" alt="">
+                    </picture>
                     <div class="services-link">
                         <a href="">COSMETOLOGY</a>
                         <svg width="23" height="20" viewBox="0 0 23 20" fill="none"
@@ -92,7 +120,10 @@
                     </div>
                 </li>
                 <li>
-                    <img src="images/services-3.png" alt="">
+                    <picture>
+                        <source srcset="images/services-3.1.png" media="(max-width: 768px)">
+                        <img src="images/services-3.png" alt="">
+                    </picture>
                     <div class="services-link">
                         <a href="">AESTHETIC PERMANENT MAKEUP</a>
                         <svg width="23" height="20" viewBox="0 0 23 20" fill="none"
@@ -103,7 +134,10 @@
                     </div>
                 </li>
                 <li>
-                    <img src="images/services-4.png" alt="">
+                    <picture>
+                        <source srcset="images/services-4.1.png" media="(max-width: 768px)">
+                        <img src="images/services-4.png" alt="">
+                    </picture>
                     <div class="services-link">
                         <a href="">Medical Permanent Makeup</a>
                         <svg width="23" height="20" viewBox="0 0 23 20" fill="none"
@@ -114,7 +148,10 @@
                     </div>
                 </li>
                 <li>
-                    <img src="images/services-5.png" alt="">
+                    <picture>
+                        <source srcset="images/services-5.1.png" media="(max-width: 768px)">
+                        <img src="images/services-5.png" alt="">
+                    </picture>
                     <div class="services-link">
                         <a href="">Lashes and Brows</a>
                         <svg width="23" height="20" viewBox="0 0 23 20" fill="none"
@@ -125,7 +162,10 @@
                     </div>
                 </li>
                 <li>
-                    <img src="images/services-6.png" alt="">
+                    <picture>
+                        <source srcset="images/services-6.1.png" media="(max-width: 768px)">
+                        <img src="images/services-6.png" alt="">
+                    </picture>
                     <div class="services-link">
                         <a href="">Facial Waxing</a>
                         <svg width="23" height="20" viewBox="0 0 23 20" fill="none"
@@ -138,7 +178,7 @@
             </ul>
         </div>
     </section>
-    <section class="info">
+    <section class="info-desk">
         <div class="container">
             <div class="info-wrapper">
                 <div>
@@ -159,7 +199,19 @@
             </div>
         </div>
     </section>
-    <section class="benefits">
+    <section class="info-mob">
+        <div class="container">
+            <h2 class="info-mob-title">Наш перманентный макияж — это искусство</h2>
+            <img src="images/info.1.png" alt="">
+            <p class="info-mob-desc">Элина Кунакаева, основатель салона ELLE PERMANENT</p>
+            <div class="info-mob-content"><p>«Это не о яркости и заметности, а о тонкости и гармонии. Мы создаем макияж,
+                который не бросается
+                в глаза, а лишь подчеркивает природную красоту человека.</p>
+                <p>Наши усилия незаметны для окружающих, но они помогают нашему клиенту чувствовать себя увереннее».</p>
+            </div>
+        </div>
+    </section>
+    <section class="benefits-desk">
         <div class="container">
             <img class="benefits-img__1" src="images/benefits-2.svg">
             <img class="benefits-img__2" src="images/benefits-3.svg">
@@ -188,7 +240,22 @@
             </ul>
         </div>
     </section>
-    <section class="clients">
+    <section class="benefits-mob">
+        <div class="container">
+            <h2 class="benefits-mob-title">Our strengths</h2>
+            <ul class="benefits-mob-list">
+                <li><span>Naturalness</span><span>We don't try to change people's faces, we celebrate their unique features. Each client is an individual to us.</span>
+                </li>
+                <li><span>Premium quality</span><span>We don't try to change people's faces, we celebrate their unique features. Each client is an individual to us.</span>
+                </li>
+                <li><span>Author's techniques</span><span>We don't try to change people's faces, we celebrate their unique features. Each client is an individual to us.</span>
+                </li>
+                <li><span>Individual approach</span><span>We don't try to change people's faces, we celebrate their unique features. Each client is an individual to us.</span>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="clients-desk">
         <div class="container">
             <h2 class="clients-title">Our valued clients</h2>
             <div class="clients-wrapper"><img src="images/clients-1.png" alt="">
@@ -200,8 +267,23 @@
                 <img src="images/clients-2.png" alt=""></div>
         </div>
     </section>
+    <section class="clients-mob">
+        <div class="container">
+            <h2 class="clients-mob-title">Our valued clients</h2>
+            <div class="clients-mob-content">
+                <div class="clients-mob-wrapper"><img src="images/clients-1.1.png" alt="">
+                    <div>
+                        <p class="clients-mob-name">Anna Hilkevich</p>
+                        <p class="clients-mob-profession">actress</p>
+                    </div>
+                </div>
+                <p class="clients-mob-desc">“There may be a review text about a service or a specialist. There may be a
+                    review text about a
+                    service or a specialist. There may be a review text about a service or a specialist. ”</p></div>
+        </div>
+    </section>
 
-    <section class="contacts" id="contacts">
+    <section class="contacts-desk" id="contacts">
         <div class="container">
             <h2 class="contacts-title">contacts</h2>
             <div class="contacts-wrapper">
@@ -258,6 +340,57 @@
             </div>
         </div>
     </section>
+    <section class="contacts-mob" id="contacts1">
+        <h2 class="contacts-mob-title">Contacts</h2>
+        <div class="contacts-mob-content">
+            <img src="images/contacts-1.1.png" alt="">
+            <div class="contacts-mob-wrapper">
+                <h3>UAE, Dubai</h3>
+                <div class="contacts-mob-address"><p class="contacts-mob-desc">Bluewaters Island<br>
+                    Bluewaters Boulevard, R9<br>
+                    Mon-Sun, 10 am – 9 pm</p>
+                    <div class="contacts-mob-info">
+                        <a href="">+971 55 221-56-36</a>
+                        <a href="">
+                            info@elle-permanent.ae</a></div>
+                </div>
+                <ul class="contacts-mob-list">
+                    <li><a href="">
+                        <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5.87938 0.705078H14.1178C17.2563 0.705078 19.8063 3.25508 19.8063 6.39354V14.632C19.8063 16.1407 19.207 17.5876 18.1402 18.6543C17.0734 19.7211 15.6265 20.3205 14.1178 20.3205H5.87938C2.74092 20.3205 0.190918 17.7705 0.190918 14.632V6.39354C0.190918 4.88486 0.790236 3.43798 1.85703 2.37119C2.92382 1.3044 4.3707 0.705078 5.87938 0.705078ZM5.68322 2.66662C4.74681 2.66662 3.84874 3.03861 3.18659 3.70075C2.52445 4.3629 2.15246 5.26097 2.15246 6.19738V14.8282C2.15246 16.7799 3.73149 18.3589 5.68322 18.3589H14.314C15.2504 18.3589 16.1485 17.9869 16.8106 17.3248C17.4728 16.6626 17.8448 15.7646 17.8448 14.8282V6.19738C17.8448 4.24565 16.2657 2.66662 14.314 2.66662H5.68322ZM15.1476 4.13777C15.4728 4.13777 15.7846 4.26693 16.0145 4.49685C16.2444 4.72676 16.3736 5.03859 16.3736 5.36373C16.3736 5.68888 16.2444 6.0007 16.0145 6.23062C15.7846 6.46053 15.4728 6.58969 15.1476 6.58969C14.8225 6.58969 14.5107 6.46053 14.2808 6.23062C14.0508 6.0007 13.9217 5.68888 13.9217 5.36373C13.9217 5.03859 14.0508 4.72676 14.2808 4.49685C14.5107 4.26693 14.8225 4.13777 15.1476 4.13777ZM9.99861 5.60892C11.2992 5.60892 12.5465 6.12558 13.4661 7.04523C14.3858 7.96488 14.9025 9.21219 14.9025 10.5128C14.9025 11.8133 14.3858 13.0607 13.4661 13.9803C12.5465 14.9 11.2992 15.4166 9.99861 15.4166C8.69803 15.4166 7.45072 14.9 6.53107 13.9803C5.61142 13.0607 5.09476 11.8133 5.09476 10.5128C5.09476 9.21219 5.61142 7.96488 6.53107 7.04523C7.45072 6.12558 8.69803 5.60892 9.99861 5.60892ZM9.99861 7.57046C9.21826 7.57046 8.46987 7.88045 7.91808 8.43224C7.36629 8.98403 7.0563 9.73242 7.0563 10.5128C7.0563 11.2931 7.36629 12.0415 7.91808 12.5933C8.46987 13.1451 9.21826 13.4551 9.99861 13.4551C10.779 13.4551 11.5273 13.1451 12.0791 12.5933C12.6309 12.0415 12.9409 11.2931 12.9409 10.5128C12.9409 9.73242 12.6309 8.98403 12.0791 8.43224C11.5273 7.88045 10.779 7.57046 9.99861 7.57046Z"
+                                  fill="#A89E93"/>
+                        </svg>
+
+                    </a></li>
+                    <li><a href="">
+                        <svg width="23" height="24" viewBox="0 0 23 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M22.2898 12.0434C22.2898 5.80192 17.4566 0.736328 11.5013 0.736328C5.54612 0.736328 0.712891 5.80192 0.712891 12.0434C0.712891 17.5161 4.42412 22.0729 9.34366 23.1244V15.4356H7.18597V12.0434H9.34366V9.21667C9.34366 7.03439 11.0374 5.25918 13.1196 5.25918H15.8167V8.65131H13.659C13.0657 8.65131 12.5802 9.16013 12.5802 9.78202V12.0434H15.8167V15.4356H12.5802V23.294C18.0284 22.7287 22.2898 17.9118 22.2898 12.0434Z"
+                                  fill="#A89E93"/>
+                        </svg>
+                    </a></li>
+                    <li><a href="">
+                        <svg width="18" height="23" viewBox="0 0 18 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M14.1818 4.09913C13.4123 3.16357 12.9882 1.9623 12.9883 0.71875H9.50935V15.5828C9.48308 16.3874 9.16429 17.1497 8.62025 17.7088C8.07621 18.2679 7.34946 18.5801 6.59331 18.5796C4.99456 18.5796 3.66602 17.1891 3.66602 15.463C3.66602 13.4012 5.53499 11.8548 7.46025 12.4902V8.70221C3.57595 8.1508 0.175781 11.3634 0.175781 15.463C0.175781 19.4547 3.28322 22.2957 6.58206 22.2957C10.1173 22.2957 12.9883 19.2389 12.9883 15.463V7.92304C14.3991 9.00171 16.0928 9.58045 17.8296 9.57727V5.87324C17.8296 5.87324 15.713 5.98112 14.1818 4.09913Z"
+                                  fill="#A89E93"/>
+                        </svg>
+                    </a></li>
+                    <li><a href="">
+                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10.0105 26.4532C11.2733 26.8346 12.5493 27.0583 13.9041 27.0583C17.3928 27.0583 20.7386 25.6724 23.2055 23.2055C25.6724 20.7386 27.0583 17.3928 27.0583 13.9041C27.0583 12.1767 26.718 10.4662 26.057 8.87026C25.3959 7.27433 24.427 5.82423 23.2055 4.60276C21.984 3.38128 20.5339 2.41236 18.938 1.7513C17.3421 1.09024 15.6316 0.75 13.9041 0.75C12.1767 0.75 10.4662 1.09024 8.87026 1.7513C7.27433 2.41236 5.82423 3.38128 4.60276 4.60276C2.13588 7.06963 0.75 10.4154 0.75 13.9041C0.75 19.4946 4.26215 24.2959 9.22126 26.1901C9.10287 25.1641 8.98449 23.4672 9.22126 22.2965L10.734 15.7983C10.734 15.7983 10.3525 15.0354 10.3525 13.8252C10.3525 12.0099 11.4838 10.6551 12.7729 10.6551C13.9041 10.6551 14.4303 11.4838 14.4303 12.5493C14.4303 13.6805 13.6805 15.2985 13.299 16.8507C13.0754 18.1398 13.9831 19.271 15.2985 19.271C17.6399 19.271 19.4552 16.7717 19.4552 13.2464C19.4552 10.0894 17.1927 7.93216 13.9436 7.93216C10.2341 7.93216 8.05054 10.6945 8.05054 13.6016C8.05054 14.7328 8.41886 15.8773 9.02395 16.627C9.14234 16.706 9.14234 16.8112 9.10287 17.0085L8.7214 18.4423C8.7214 18.6659 8.57671 18.7449 8.35309 18.587C6.66936 17.8504 5.69595 15.4563 5.69595 13.5227C5.69595 9.36596 8.64248 5.59072 14.3251 5.59072C18.8501 5.59072 22.3754 8.83979 22.3754 13.1543C22.3754 17.6794 19.5736 21.3099 15.5616 21.3099C14.2856 21.3099 13.036 20.6259 12.5887 19.8235L11.7074 22.941C11.4048 24.0723 10.5761 25.585 10.0105 26.4926V26.4532Z"
+                                  fill="#A89E93"/>
+                        </svg>
+                    </a></li>
+                    <li><a href="">WhatsApp
+                        <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                  d="M14.1595 2.82804C13.4178 2.08616 12.5363 1.49883 11.566 1.10005C10.5935 0.700238 9.55176 0.49634 8.50036 0.50005C4.09289 0.50005 0.5 4.06004 0.5 8.42803C0.5 9.82802 0.823651 11.004 1.51823 12.204L0.776376 16.5L5.0493 15.5422C6.22026 16.1749 7.15921 16.364 8.49964 16.364C12.9071 16.364 16.5 12.804 16.5 8.43603C16.5 6.31603 15.6687 4.32404 14.1588 2.82877L14.1595 2.82804ZM11.8831 9.96184C11.5129 9.78293 10.9187 9.49639 10.7848 9.44184C10.5986 9.37784 10.4692 9.34584 10.3324 9.53784C10.195 9.73784 9.81606 10.1851 9.7026 10.3138C9.58987 10.4498 9.46841 10.4658 9.26622 10.3618C9.22846 10.3442 9.19039 10.3272 9.15203 10.3109C8.87565 10.1938 8.30835 9.95238 7.66033 9.37784C7.06248 8.84984 6.66683 8.20184 6.54609 8.00184C6.43336 7.80185 6.53009 7.69785 6.63482 7.59385C6.69519 7.53421 6.76719 7.44839 6.83702 7.36403C6.86974 7.32476 6.90247 7.28548 6.93375 7.24985C7.02248 7.14803 7.06321 7.06512 7.11921 6.95385L7.13521 6.92185C7.19994 6.78585 7.16794 6.67385 7.11921 6.57785C6.90863 6.08969 6.704 5.59899 6.50536 5.10585C6.36281 4.76622 6.21444 4.76404 6.09807 4.76331C6.08207 4.76331 6.06753 4.76331 6.05371 4.76185H5.66605C5.52859 4.76185 5.31913 4.80985 5.13294 5.00913C5.11985 5.02513 5.10385 5.04258 5.08639 5.06149C4.87911 5.28694 4.43909 5.76549 4.43909 6.66585C4.43909 7.63675 5.14967 8.57566 5.25294 8.71166L5.2544 8.71384L5.27403 8.74293C5.46823 9.02366 6.75483 10.8877 8.6691 11.7058C9.14548 11.9138 9.51714 12.0331 9.80733 12.1218C10.2837 12.2738 10.7201 12.2498 11.067 12.2018C11.4547 12.1458 12.2533 11.7218 12.4155 11.2578C12.5849 10.7938 12.5849 10.4018 12.5282 10.3138C12.4831 10.2433 12.3958 10.2033 12.2591 10.1407C12.1335 10.0815 12.0082 10.0219 11.8831 9.96184Z"
+                                  fill="#EBE8E2"/>
+                        </svg>
+                    </a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
     <section class="reviews">
         <div class="container">
             <h2 class="reviews-title">What people are saying about us?</h2>
@@ -270,7 +403,11 @@
         </div>
     </section>
 </main>
-<footer class="footer">
+
+<!--<iframe width="1000px" height="1000px" scrolling="no" frameborder="0" allowtransparency="true" id="ms_booking_iframe"-->
+<!--        src="https://n1355332.alteg.io"></iframe>-->
+
+<footer class="footer-desk">
     <div class="container">
         <div class="footer-block">
             <div class="footer-info">
@@ -320,6 +457,9 @@
         </div>
         <p class="footer-desc">2025 © ELLE PERMANENT</p>
     </div>
+</footer>
+<footer class="footer-mob">
+
 </footer>
 </body>
 </html>
